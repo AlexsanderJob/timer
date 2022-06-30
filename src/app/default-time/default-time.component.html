@@ -1,0 +1,7 @@
+<div class="container text-center mb-3 mt-3">
+  <div class="h4">{{ timerValue }}</div>
+  <button class="btn btn-primary" type="button" (click)="onStartTimer()">Start / Stop</button>
+  <button class="btn btn btn-danger" type="button" (click)="onResetTimer()" [disabled]="timer === 0">Reset</button>
+  <button class="btn btn btn-info" type="button" (click)="onWaitTimer()" [disabled]="timer === 0">Wait</button>
+</div>
+

@@ -1,0 +1,6 @@
+<div class="container text-center">
+  <div class="h4">{{ timerValue }}</div>
+  <button class="btn btn-primary" type="button" (click)="onStartTimer()">Start / Stop</button>
+  <button class="btn btn btn-danger" type="button" (click)="onResetTimer()" [disabled]="timer === 0 && !isPlayTimer">Reset</button>
+  <button class="btn btn btn-info" type="button" (click)="onWaitTimer()" [disabled] = "!isPlayTimer" #dbClick>Wait</button>
+</div>
